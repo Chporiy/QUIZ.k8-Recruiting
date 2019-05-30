@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Formular - Black';
+    src: url('../fonts/Formular-Black.eot');
+    src: url('../fonts/Formular-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Formular-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formular - Bold';
+    src: url('../fonts/Formular-Bold.eot');
+    src: url('../fonts/Formular-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Formular-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formular - Medium';
+    src: url('../fonts/Formular-Medium.eot');
+    src: url('../fonts/Formular-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Formular-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Formular - Light';
+    src: url('../fonts/Formular-Light.eot');
+    src: url('../fonts/Formular-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Formular-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+

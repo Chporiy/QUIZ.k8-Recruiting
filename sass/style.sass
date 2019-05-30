@@ -1,0 +1,1326 @@
+$text_color: #fff
+$active_color: #2d3baf
+
+=screen()
+  height: 100vh
+  padding-top: 50px
+  padding-bottom: 40px
+  margin: 0 auto
+  width: 100%
+  // max-width: 1366px
+  background: #ecedf1 url("../img/bg-1366.jpg") center center no-repeat
+  background-size: cover
+  border: 15px solid #fff
+
+  
+  
+* 
+  box-sizing: border-box
+
+a 
+  text-decoration: none
+  transition: 0.5s all
+  &:hover
+    cursor: pointer
+    transform: translateX(-5px)
+    // color: $active_color
+    // border-color: $active_color
+
+button
+  &:focus
+    outline: none
+  &:hover
+    cursor: pointer
+
+.no-desctop
+  display: none
+.no-mobile
+  display: block
+
+.button
+  padding: 23px 60px
+  border: none
+  border-radius: 5px
+  background-color: $active_color
+  // background-image: linear-gradient(-45deg, #2d3baf 0%, #2b39aa 37%, #3e4ade 100%)
+  color: #ffffff
+  font-family: "Formular - Medium"
+  font-size: 18px
+  font-weight: 500
+  transition: 0.5s all
+  &:focus
+    outline: none
+  &:hover
+    cursor: pointer
+    transform: translateY(-5px)
+    // box-shadow: 0 0px 50px rgba(0, 0, 0, 0.7)
+    // background-image: none
+    // background-color: $active_color
+
+body
+  font-size: 10px
+  font-family: "Formular - Light", serif
+  font-weight: 300
+  color: $text_color
+  background-color: #ecedf1
+  overflow-x: hidden
+
+
+.wrapper
+  border: 15px solid #fff
+
+.right
+  position: absolute
+  top: 0
+  right: 45px
+  height: 100%
+  overflow: hidden
+  z-index: 1
+  .block
+    margin-top: 25px
+    width: 12px
+    height: 67px
+    opacity: 0.6
+    transition: 0.5s all
+    &:first-child
+      margin-top: -40px
+    &:hover
+      opacity: 1
+
+
+#block1
+  background: linear-gradient(to bottom, #2c512e, #33553b)
+  &:hover
+    background: linear-gradient(to bottom, lighten(#2c512e, 5%), lighten(#33553b, 5%))
+#block2
+  background: linear-gradient(to bottom, #324b3d, #2e3e3f)
+  &:hover
+    background: linear-gradient(to bottom, lighten(#324b3d, 5%), lighten(#2e3e3f, 5%))
+#block3
+  background: linear-gradient(to bottom, #2e3a44, #2d364d)
+  &:hover
+    background: linear-gradient(to bottom, lighten(#2e3a44, 5%), lighten(#2d364d, 5%))
+#block4
+  background: linear-gradient(to bottom, #2e3055, #363177)
+  &:hover
+    background: linear-gradient(to bottom, lighten(#2e3055, 5%), lighten(#363177, 5%))
+#block5
+  background: linear-gradient(to bottom, #332c6f, #5a497b)
+  &:hover
+    background: linear-gradient(to bottom, lighten(#332c6f, 5%), lighten(#5a497b, 5%))
+#block6
+  background: linear-gradient(to bottom, #574b66, #473d42)
+  &:hover
+    background: linear-gradient(to bottom, lighten(#574b66, 5%), lighten(#473d42, 5%))
+#block7
+  background: linear-gradient(to bottom, #4c413e, #4b4338)
+  &:hover
+    background: linear-gradient(to bottom, lighten(#4c413e, 5%), lighten(#4b4338, 5%))
+#block8
+  background: linear-gradient(to bottom, #4e5035, #5a5c3a)
+  &:hover
+    background: linear-gradient(to bottom, lighten(#4e5035, 5%), lighten(#5a5c3a, 5%))
+
+.header
+  position: relative
+  +screen()
+  .container
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    height: 100%
+  &-top
+    &_title
+      font-family: "Formular - Black"
+      font-size: 1.8em
+      font-weight: 400
+      &-o
+        margin-left: 5px
+        font-size: 1.8em
+        font-weight: 300
+    &_social
+      text-align: right
+    &_link
+      margin-bottom: 8px
+      display: inline-block
+      color: $text_color
+      font-size: 1.2em
+      font-weight: 300
+      border-bottom: 1px solid $text_color
+    &_contacts
+      text-align: right
+    &_phone
+      font-family: "Formular - Black"
+      font-size: 1.8em
+      font-weight: bold
+      color: $text_color
+    &_btn
+      margin-top: 10px
+      border: none
+      padding: 0
+      background-color: transparent
+      color: $text_color
+      font-family: "Formular - Light"
+      font-size: 1.4em
+      font-weight: 300
+      text-decoration: underline
+      transition: 0.5s all
+      &:hover
+        transform: translateX(-5px)
+  &-center
+    position: relative
+    // margin-top: 137px
+    &_title
+      font-family: "Formular - Black"
+      font-size: 4.8em
+      font-weight: 400
+      line-height: 60px
+    &_text
+      font-size: 1.6em
+      font-weight: 300
+      line-height: 24px
+    &_text2
+      margin-top: 36px
+      font-size: 1.6em
+      font-weight: 300
+      line-height: 24px
+    &_offer
+      margin-top: 26px
+      display: flex
+      align-items: center
+  &-offer
+    &_consult
+      padding: 13px 31px
+      margin-left: 25px
+      border: 1px solid $text_color
+      background-color: transparent
+      background-image: none
+      font-family: "Formular - Light"
+      font-size: 1.6em
+      font-weight: 300
+      text-align: left
+      box-shadow: none
+      &:hover
+        border: none
+        background-color: $active_color
+        padding: 14px 33px
+      span
+        font-family: "Formular - Bold"
+        font-weight: bold
+        border-bottom: 1px solid $text_color
+        padding-bottom: 1px
+
+  &-bottom
+    &_inn
+      // margin-top: 90px
+      font-size: 1.4em
+      font-weight: 300
+      color: $text_color !important
+    &_policy
+      // margin-top: 90px
+      padding-bottom: 3px
+      display: block
+      text-align: right
+      color: $text_color
+      font-size: 1.4em
+      font-weight: 300
+      border-bottom: 1px solid $text_color
+
+.form
+  display: none
+  position: relative
+  +screen()
+  .container
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    height: 100%
+  &-bottom_policy, &-bottom_inn
+    margin-top: 0px
+
+.step
+  height: auto
+  position: relative
+  &-question
+    // margin-top: 60px
+    font-size: 1.6em
+    font-weight: 300
+    line-height: 24px
+  &-title
+    margin-top: 34px
+    font-family: "Formular - Black"
+    font-size: 3em
+    font-weight: 400
+    line-height: 39.69px
+  &-subtitle
+    margin-top: 15px
+    width: 181px
+    height: 32px
+    color: #ffffff
+    font-size: 1.4em
+    font-weight: 300
+    line-height: 18px
+  &-answers
+    margin-top: 50px
+    display: flex
+    flex-wrap: wrap
+  &-answer
+    margin-bottom: 14px
+    margin-right: 14px
+    width: 256px
+    height: 64px
+    font-family: "Formular - Light"
+    font-size: 1.6em
+    font-weight: 300
+    line-height: 18px
+    border-radius: 5px
+    border: 1px solid #e3e3e3
+    transition: 0.5s all
+    display: flex
+    align-items: center
+    &:hover
+      margin-top: -5px
+      cursor: pointer
+      .step-answer_descrspan::before
+          // background-color: $text_color
+    &_descr
+      display: flex
+      align-items: center
+      &span        
+        position: relative
+        margin-left: 48px
+        vertical-align: middle
+        display: block
+        &::before
+          content: ''
+          position: absolute
+          left: -28px
+          top: 10px
+          display: block
+          vertical-align: middle
+          background-color: transparent
+          width: 16px
+          height: 16px
+          border: 1px solid #ffffff
+          border-radius: 50%
+      span
+        font-size: 14px
+      input
+        display: none
+        &:checked
+          &+span::before
+            background-color: $text_color
+            border: 1px solid #ecedf1
+      &one
+        text-align: center
+  &-next
+    width: 259px
+    height: 64px
+    border-radius: 5px
+    line-height: 0px
+    &:hover
+      cursor: pointer
+    &_noactive
+      background-color: transparent
+      background-image: none
+      box-shadow: none
+      border: 1px solid $text_color
+
+.step2-answers
+  width: 256px + 256px + 28px
+
+.step2-answer_descr, .step4-answer_descr, .step3-answer_descr
+  display: block
+  margin: 0 auto
+
+#s1q1span::before
+  top: 2px
+
+.step1, .step2, .step3, .step4
+  display: none
+
+.result
+  display: none
+  +screen()
+  .container
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    height: 100%
+  &-center
+    height: 274px
+    display: none
+  &-title
+    // margin-top: 137px
+    font-family: "Formular - Black"
+    font-size: 3.6em
+    font-weight: 400
+    line-height: 60px
+  &-text
+    margin-top: 20px
+    font-size: 1.6em
+    font-weight: 300
+    line-height: 24px
+  &-form
+    margin-top: 44px
+    &_btn
+      margin-left: 15px
+      &-noactive
+        background-color: transparent
+        background-image: none
+        box-shadow: none
+        border: 1px solid $text_color
+        &:hover
+          transform: none
+    &_input
+      padding: 25px 93px
+      border-radius: 5px
+      background-color: transparent
+      font-size: 1.6em
+      font-weight: 300
+      color: #6f6f6f
+      text-align: center
+      border: 1px solid #e3e3e3
+      vertical-align: top
+      color: $text_color
+      &:focus
+        outline: none
+  &-inn, &-policy
+    // margin-top: 15px
+
+.modal-overlay
+  position: absolute
+  display: none
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.65)
+  z-index: 99
+.modal
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  border: 1px solid $text_color
+  border-radius: 10px
+  width: 465px
+  height: 580px
+  padding-top: 28px
+  padding-bottom: 28px
+  padding-left: 52px
+  background: url("../img/modal-bg.jpg") center center no-repeat
+  background-size: cover
+  &-close
+    margin-right: 15px
+    font-size: 1.2em
+    font-family: "Formular - Light"
+    font-weight: 300
+    text-align: right
+    transition: 0.5s all
+    &:hover
+      transform: translateX(-5px)
+      cursor: pointer
+    span
+      border-bottom: 1px solid $text_color
+      padding-bottom: 3px
+  &-title
+    margin-top: 67px
+    font-family: "Formular - Black"
+    font-size: 2.9em
+    font-weight: 400
+    line-height: 36.52px
+  &-subtitle
+      font-family: "Formular - Light"
+      font-weight: 300
+      font-size: 18px
+      line-height: 24px
+  &-form
+    margin-top: 33px
+    &_input
+      padding: 23px 0px
+      border-radius: 5px
+      background-color: transparent
+      font-size: 1.6em
+      font-weight: 300
+      color: #6f6f6f
+      text-align: center
+      border: 1px solid #e3e3e3
+      vertical-align: top
+      color: $text_color
+      width: 230px
+      &:focus
+        outline: none
+    &_btn
+      margin-top: 15px
+      width: 230px
+      &-noactive
+        background-color: transparent
+        background-image: none
+        box-shadow: none
+        border: 1px solid $text_color
+        &:hover
+          transform: none
+  &-warning
+    margin-top: 24px
+    width: 177px
+    font-size: 12px
+    font-weight: 300
+  &-k8
+    margin-top: 110px
+    font-family: "Formular - Black"
+    font-size: 12px
+    font-weight: 400
+    span
+      margin-left: 0px
+      font-family: "Formular - Light"
+      font-size: 12px
+      font-weight: 300
+
+.modal_thanks-overlay
+  position: absolute
+  display: none
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.65)
+  z-index: 99
+.modal_thanks-close
+  margin-right: 15px
+  font-size: 1.2em
+  font-family: "Formular - Light"
+  font-weight: 300
+  text-align: right
+  transition: 0.5s
+  &:hover
+    cursor: pointer
+    transform: translateX(-5px)
+  span
+    border-bottom: 1px solid $text_color
+    padding-bottom: 3px
+.modal_thanks_warning
+  margin-top: 14px
+  width: auto
+  font-size: 12px
+  font-weight: 300
+  line-height: 16px
+.modal_thanks_check
+  margin-top: 105px
+  margin-left: -50px
+  img
+    display: block
+    margin: 0 auto
+
+
+
+@media (min-width: 1367px)
+  .header, .form, .result
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    height: 100%
+    background-image: url("../img/bg-1440.jpg") !important
+  .right
+    right: 45px
+    z-index: -1
+    .block
+      margin-top: 35px
+      width: 12px
+      height: 85px
+      &:first-child
+        margin-top: -20px
+  .header
+    &-top_title
+      font-size: 2.4em
+    &-top_title-o
+      font-size: 2.4em
+    &-top_link
+      font-size: 1.4em
+    &-top_phone
+      font-size: 1.8em
+    &-center
+      // margin-top: 173px
+    &-bottom
+      &_inn, &_policy
+        // margin-top: 168px
+        font-size: 1.6em
+  .form
+    display: none
+    +screen()
+    &-bottom_policy, &-bottom_inn
+      margin-top: 90px
+  .step
+    height: 428px
+    &-question
+      margin-top: 97px
+    &-title
+      margin-top: 34px
+    &-subtitle
+      margin-top: 54px
+      font-size: 1.6em
+    &-answers
+      margin-top: 71px
+  .result
+    &-center
+      height: 289px
+    &-title
+      // margin-top: 158px
+    &-text
+      font-size: 1.8em
+  .modal
+    width: 465px
+    height: 649px
+    &-k8
+      margin-top: 165px
+
+@media (min-width: 1680px)
+  .header, .form, .result
+    background-image: url("../img/bg-1680.jpg") 
+@media (min-width: 1920px)
+  .header, .form, .result
+    background-image: url("../img/bg-1920.jpg")
+  
+
+@media (min-height: 1080px)
+  .right
+    right: 45px
+    z-index: -1
+    .block
+      margin-top: 40px
+      width: 12px
+      height: 105px
+      &:first-child
+        margin-top: -20px
+
+@media (min-width: 576px) and (max-width: 1200px)
+  .right
+    right: 35px
+    z-index: 0
+    .block
+      margin-top: 45px
+      width: 12px
+      height: 70px
+      &:first-child
+        margin-top: -5px
+  .header
+    .container
+    &-top
+      &_contacts
+        text-align: right
+        display: flex
+        align-items: flex-end
+        flex-direction: column
+    &-center
+      position: relative
+      // margin-top: 137px
+      &_title
+        font-family: "Formular - Black"
+        font-size: 4.1em
+        font-weight: 400
+        line-height: 60px
+        br
+          display: none
+      &_text
+        font-size: 1.6em
+        font-weight: 300
+        line-height: 24px
+        br
+          display: none
+      &_text2
+        margin-top: 34px
+      &_offer
+        margin-top: 26px
+        display: flex
+        align-items: flex-start
+        flex-direction: column
+    &-offer
+      &_consult
+        padding: 0px 0px
+        margin-top: 15px
+        margin-left: 0px
+        border: 0px solid $text_color
+        font-size: 1.4em
+        &:hover
+          border: none
+          background-color: transparent
+          padding: 0px 0px
+    &-bottom
+      &_inn
+        text-align: right
+        // margin-top: 90px
+        font-size: 1.4em
+        font-weight: 300
+        color: $text_color !important
+  .step
+    &-subtitle
+      margin-top: 74px
+    &-answers
+      margin-top: 68px
+      display: flex
+      flex-wrap: wrap
+    &-answer
+      width: 256px
+      height: 64px
+      display: flex
+      align-items: center
+      &:hover
+        margin-top: -5px
+        cursor: pointer
+        .step-answer_descrspan::before
+          background-color: none !important
+      &_descr
+        display: flex
+        align-items: center
+        &span        
+          position: relative
+          margin-left: 57px
+          vertical-align: middle
+          display: block
+          &::before
+            content: ''
+            position: absolute
+            left: -28px
+            top: 10px
+            display: block
+            vertical-align: middle
+            background-color: transparent
+            width: 16px
+            height: 16px
+            border: 1px solid #ffffff
+            border-radius: 50%
+        input
+          display: none
+          &:checked
+            &+span::before
+              background-color: $text_color
+              border: 1px solid #ecedf1
+          &:not(:checked)
+            &+span::before
+              background-color: transparent
+              border: 1px solid #ecedf1
+  .result
+    &-center
+      height: auto
+    &-text
+      margin-top: 31px
+    &-form
+      margin-top: 50px
+      &_btn
+        margin-left: 15px
+        &-noactive
+          background-color: transparent
+          background-image: none
+          box-shadow: none
+          border: 1px solid $text_color
+          &:hover
+            transform: none
+      &_input
+        padding: 25px 50px
+  .modal
+    width: 464px
+    height: 611px
+    &-k8
+      margin-top: 130px
+
+@media (max-width: 840px)
+  .right
+    display: none
+
+@media (min-width: 768px) and (max-width: 991px)
+  .header
+    .container
+    &-center
+      position: relative
+      // margin-top: 137px
+      &_title
+        width: 520px
+        font-size: 3em
+        line-height: 35px
+      &_text
+        width: 468px
+        margin-top: 18px
+        font-size: 1.4em
+        font-weight: 300
+        line-height: 18px
+        br
+          display: none
+      &_text2
+        margin-top: 24px
+      &_offer
+        margin-top: 38px
+        display: flex
+        align-items: center
+        flex-direction: row
+    &-offer
+      &_consult
+        padding: 0px 0px
+        margin-top: 0px
+        margin-left: 28px
+        border: 0px solid $text_color
+        font-size: 1.4em
+        &:hover
+          border: none
+          background-color: transparent
+          padding: 0px 0px
+    &-bottom
+      &_inn
+        text-align: right
+        // margin-top: 90px
+        font-size: 1.4em
+        font-weight: 300
+  .step
+    &-subtitle
+      margin-top: 44px
+      width: 200px
+    &-answers
+      margin-top: 37px
+      display: flex
+      flex-wrap: wrap
+    &-answer
+      width: 256px
+      height: 64px
+      display: flex
+      align-items: center
+      &:hover
+        margin-top: -5px
+        cursor: pointer
+        .step-answer_descrspan::before
+          background-color: none !important
+      &_descr
+        display: flex
+        align-items: center
+        &span        
+          position: relative
+          margin-left: 57px
+          vertical-align: middle
+          display: block
+          &::before
+            content: ''
+            position: absolute
+            left: -28px
+            top: 10px
+            display: block
+            vertical-align: middle
+            background-color: transparent
+            width: 16px
+            height: 16px
+            border: 1px solid #ffffff
+            border-radius: 50%
+        input
+          display: none
+          &:checked
+            &+span::before
+              background-color: $text_color
+              border: 1px solid #ecedf1
+          &:not(:checked)
+            &+span::before
+              background-color: transparent
+              border: 1px solid #ecedf1
+  .step3
+    .step-title br
+      display: none
+  .result
+    &-center
+      height: auto
+    &-text
+      margin-top: 31px
+    &-form
+      margin-top: 50px
+      &_btn
+        margin-left: 15px
+        &-noactive
+          background-color: transparent
+          background-image: none
+          box-shadow: none
+          border: 1px solid $text_color
+          &:hover
+            transform: none
+      &_input
+        padding: 25px 50px
+  .modal
+    width: 464px
+    height: 611px
+    &-k8
+      margin-top: 130px
+
+@media (min-width: 576px) and (max-width: 767px) 
+  .header
+    &-top_social
+      margin-top: -10px
+      text-align: left
+    &-center
+      position: relative
+      // margin-top: 137px
+      &_title
+        // width: 399px
+        font-size: 3em
+        line-height: 35px
+        br
+          display: block
+      &_text
+        width: 373px
+        margin-top: 23px
+        line-height: 18px
+        br
+          display: none
+      &_text2
+        margin-top: 20px
+      &_offer
+        margin-top: 27px
+        display: flex
+        align-items: center
+        flex-direction: row
+    &-offer
+      &_consult
+        padding: 0px 0px
+        margin-top: 0px
+        margin-left: 28px
+        border: 0px solid $text_color
+        font-size: 1.4em
+        &:hover
+          border: none
+          background-color: transparent
+          padding: 0px 0px
+    &-bottom
+      &_inn
+        text-align: left
+        // margin-top: 90px
+        font-size: 1.4em
+        font-weight: 300
+  .step
+    &-title
+      margin-top: 24px
+      font-size: 2.4em
+    &-subtitle
+      margin-top: 29px
+      width: 200px
+    &-answers
+      margin-top: 37px
+      display: flex
+      flex-wrap: wrap
+    &-answer
+      width: 240px
+      height: 64px
+      display: flex
+      align-items: center
+      &:hover
+        margin-top: -5px
+        cursor: pointer
+        .step-answer_descrspan::before
+          background-color: none !important
+      &_descr
+        display: flex
+        align-items: center
+        &span        
+          position: relative
+          margin-left: 53px
+          vertical-align: middle
+          display: block
+          &::before
+            content: ''
+            position: absolute
+            left: -28px
+            top: 10px
+            display: block
+            vertical-align: middle
+            background-color: transparent
+            width: 16px
+            height: 16px
+            border: 1px solid #ffffff
+            border-radius: 50%
+        input
+          display: none
+          &:checked
+            &+span::before
+              background-color: $text_color
+              border: 1px solid #ecedf1
+          &:not(:checked)
+            &+span::before
+              background-color: transparent
+              border: 1px solid #ecedf1
+    &-next
+      width: 240px
+
+  .step3
+    .step-title br
+      display: none
+  .result
+    &-center
+      height: auto
+    &-text
+      margin-top: 31px
+    &-form
+      margin-top: 50px
+      &_btn
+        margin-left: 15px
+        &-noactive
+          background-color: transparent
+          background-image: none
+          box-shadow: none
+          border: 1px solid $text_color
+          &:hover
+            transform: none
+      &_input
+        padding: 25px 30px
+  .modal
+    width: 464px
+    height: 611px
+    &-k8
+      margin-top: 130px
+
+@media (max-width: 575px)
+  body
+    background: url("../img/360.jpg") no-repeat
+    background-size: cover
+  .no-desctop
+    display: block
+  .no-mobile
+    display: none
+  .right
+    display: none
+  .header
+    position: relative
+    +screen()
+    border: none
+    height: 100%
+    background-color: transparent
+    background-image: none
+    &-hide
+      text-align: right
+    &-top
+      &_title
+        display: inline-block
+        font-size: 14px
+        font-weight: 400
+        &-o
+          font-size: 14px
+          font-weight: 300
+          display: inline-block
+          margin-left: 3px
+          margin-top: 0px
+      &_social
+        display: none
+      &_link
+        margin-bottom: 9px
+      &_contacts
+        display: none
+      &_phone
+        display: block
+        font-family: "Formular - Black"
+        font-size: 20px
+        font-weight: bold
+      &_btn
+        margin-top: 9px
+        font-size: 12px
+    &-center
+      margin-top: 66px
+      &_title
+        font-size: 18px
+        font-weight: 400
+        line-height: 24px
+      &_text
+        margin-top: -33px
+        font-size: 14px
+        font-weight: 300
+        line-height: 16px
+        br
+          display: none
+      &_text2
+        margin-top: 18px
+        font-size: 14px
+        font-weight: 300
+        line-height: 16px
+      &_offer
+        margin-top: 30px
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        flex-direction: column
+    &-offer
+      &_btn
+        display: block
+        width: 100%
+      &_consult
+        padding: 0px 0px
+        margin-top: 15px
+        margin-left: 0px
+        border: 0px solid $text_color
+        font-size: 1.4em
+        &:hover
+          border: none
+          background-color: transparent
+          padding: 0px 0px
+    &-bottom
+      &_inn
+        display: none
+        color: $text_color !important
+      &_policy
+        display: none
+  .form
+    height: 100%
+    border: none
+    background-color: transparent
+    background-image: none
+  .step
+    height: 100%
+    &-question
+      margin-top: 65px
+      font-size: 11px
+      line-height: 11px
+    &-title
+      margin-top: 13px
+      font-family: "Formular - Black"
+      font-size: 16px
+      line-height: 16px
+    &-subtitle
+      margin-top: 18px
+      width: 175px
+      height: 27px
+      color: #ffffff
+      font-size: 12px
+      font-weight: 300
+      line-height: 12px
+    &-answers
+      margin-top: 20px
+      display: flex
+      flex-direction: column
+    &-answer
+      margin-bottom: 15px
+      margin-right: 0px
+      width: 100%
+      height: 64px
+      display: flex
+      align-items: center
+      &:hover
+        margin-top: 0px
+        cursor: pointer
+        .step-answer_descrspan::before
+          background-color: none !important
+      &_descr
+        display: flex
+        align-items: center
+        &span        
+          position: relative
+          margin-left: 48px
+          vertical-align: middle
+          display: block
+          &::before
+            content: ''
+            position: absolute
+            left: -28px
+            top: 10px
+            display: block
+            vertical-align: middle
+            background-color: transparent
+            width: 16px
+            height: 16px
+            border: 1px solid #ffffff
+            border-radius: 50%
+        input
+          display: none
+          &:checked
+            &+span::before
+              background-color: $text_color
+              border: 1px solid #ecedf1
+          &:not(:checked)
+            &+span::before
+              background-color: transparent
+              border: 1px solid #ecedf1
+        &one
+          text-align: center
+    &-next
+      width: 100%
+      height: 64px
+      border-radius: 5px
+      line-height: 0px
+      &:hover
+        cursor: pointer
+  .step2-answers
+    width: 100%
+  .step3 .step-title 
+    width: 228px
+    br
+      display: none
+  .result
+    +screen()
+    display: none
+    height: 100%
+    border: none
+    background-color: transparent
+    background-image: none
+    &-center
+      height: 100%
+    &-title
+      margin-top: 65px
+      font-family: "Formular - Black"
+      font-size: 16px
+      line-height: 16px
+    &-text
+      width: 250px
+      margin-top: 17px
+      font-size: 14px
+      font-weight: 300
+      line-height: 16px
+      br 
+        display: none
+    &-form
+      margin-top: 32px
+      &_input
+        display: block
+        padding: 21.5px 0px
+        width: 100%
+        border-radius: 5px
+        background-color: transparent
+        color: #ffffff
+        vertical-align: middle
+        color: $text_color
+        &:focus
+          outline: none
+      &_btn
+        width: 100%
+        margin-left: 0px
+        margin-top: 15px
+  
+  .modal-overlay
+    position: fixed
+    display: none
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.65)
+    z-index: 99
+  .modal
+    position: absolute
+    top: 0%
+    left: 0%
+    transform: translate(0%, 0%)
+    border: 0px
+    border-radius: 0px
+    width: 100%
+    height: 100%
+    padding-top: 50px
+    padding-bottom: 40px
+    padding-left: 0px
+    background: url("../img/360.jpg") center center no-repeat
+    background-size: cover
+    &-close
+      margin-top: -15px
+      font-size: 12px
+      text-align: right
+      span
+        display: inline-block
+        border-bottom: 1px solid $text_color
+        padding-bottom: 3px
+    &-title
+      margin-top: 63px
+      font-size: 18px
+      font-weight: 400
+      line-height: 18px
+    &-subtitle
+      margin-top: 11px
+      font-size: 14px
+      line-height: 14px
+    &-form
+      margin-top: 26px
+      &_input
+        width: 100%
+      &_btn
+        width: 100%
+        margin-top: 15px
+    &-warning
+      margin-top: 17px
+      width: 205px
+      font-size: 12px
+    &-k8
+      margin-top: 0
+      font-size: 14px
+      font-weight: 400
+      span
+        margin-left: 0px
+        margin-top: 0px
+        font-size: 14px
+        font-weight: 400
+
+  .modal_thanks-overlay
+    position: fixed
+    display: none
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.65)
+    z-index: 99
+  .modal_thanks-close
+    margin-top: -15px
+    font-size: 12px
+    text-align: right
+    span
+      display: inline-block
+      border-bottom: 1px solid $text_color
+      padding-bottom: 3px
+  .modal_thanks_warning
+    width: 269px
+    margin-top: 14px
+    font-size: 14px
+  .modal_thanks_check
+    margin-top: 66px
+    margin-left: 0px
+    img
+      display: block
+      margin: 0 auto
+
+  .modal_info-overlay
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.65)
+    z-index: 90
+    .modal
+      &-info
+        position: absolute
+        top: 0%
+        left: 0%
+        transform: translate(0%, 0%)
+        border: 0px
+        border-radius: 0px
+        width: 100%
+        height: 100%
+        padding-top: 50px
+        padding-bottom: 40px
+        padding-left: 0px
+        background: url("../img/360.jpg") center center no-repeat
+        background-size: cover
+        &_social
+          text-align: left
+          margin-top: 36px
+        &_contacts
+          display: block
+          margin-top: 62px
+          text-align: left
+        &_close
+          text-align: right
+          transition: 0.5s all
+          span
+            font-size: 1.2em
+            border-bottom: 1px solid $text_color
+            padding-bottom: 3px
+          &:hover
+            transform: translateX(-5px)
+            cursor: pointer
+        &_inn
+          margin-top: 47px
+          font-size: 1.4em
+          font-weight: 300
+          color: $text_color !important
+
+@media (max-width: 577px) and (min-height: 800px)
+  .step3  
+    height: 430px
+  .step4
+    height: 430px
